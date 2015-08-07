@@ -1,0 +1,7 @@
+database:
+    type: file
+    path: /tmp/filedb
+    host: localhost
+    dbname: laravel_news
+    user: root
+    password: root

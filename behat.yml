@@ -1,0 +1,14 @@
+default:
+    suites:
+        default:
+            paths: [tests]
+            contexts:
+                - Behat\MinkExtension\Context\MinkContext
+                - behatch:json:
+                    evaluationMode: javascript
+                - behatch:rest
+    extensions:
+        Behat\MinkExtension\ServiceContainer\MinkExtension:
+            base_url: 'http://fun.local'
+            goutte: ~
+        Sanpi\Behatch\Extension: ~
