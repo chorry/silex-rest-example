@@ -28,7 +28,7 @@ class FileDB implements Databaseable
 			}
 		}
 
-		return $this->maxId + 1;
+		return ++$this->maxId;
 	}
 
 	private function getPath( $id )
